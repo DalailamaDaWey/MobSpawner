@@ -1,0 +1,13 @@
+name: MobSpawner
+version: '${project.version}'
+main: me.jamesbrown.mobspawner.MobSpawner
+api-version: '1.20'
+commands:
+  killall:
+    description: Kills all entities (excluding players) in the given dimension/s.
+    usage: /<command> [Without arguments the command selects the dimension in which the command sender resides.|NORMAL|NETHER|THE_END|Any combination of them separated by space]
+
+permissions:
+  killall-use:
+    description: Enables you to use killall command.
+    default: op
